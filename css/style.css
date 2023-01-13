@@ -108,6 +108,7 @@ main {
     background-size: cover;
     background-position: center;
     flex: 1;
+    padding: 1em;
 }
 
 
