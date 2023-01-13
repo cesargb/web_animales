@@ -1,26 +1,23 @@
-/*modo claro*/
-@media (prefers-color-scheme: light) {
-    :root {
-        --body-bg: #FFFFFF;
-        --body-color: #000000;
-        --nav-footer-bg-color: rgb(154, 206, 241);
-        --enlace-color : rgb(24, 22, 22);
-    }
- }
+:root {
+    --body-bg: #FFFFFF;
+    --body-color: #000000;
+    --nav-header-bg-color: rgb(154, 206, 241);
+    --nav-header-fg-color: rgb(39, 39, 39);
+    --nav-footer-bg-color: rgb(38, 38, 38);
+    --nav-footer-fg-color: rgb(186, 186, 186);
+    --enlace-color : rgb(24, 22, 22);
+}
 
  /*modo oscuro*/
  @media (prefers-color-scheme: dark) {
     :root {
-        --body-bg: #FFFFFF;
-        --body-color: #000000;
-        --nav-footer-bg-color: rgb(154, 206, 241);
-        --enlace-color : rgb(24, 22, 22);
     }
  }
 
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 .hidden {
@@ -44,8 +41,8 @@ body {
 
 
 header {
-    background-color: var(--nav-footer-bg-color);
-    color: white;
+    background-color: var(--nav-header-bg-color);
+    color: var(--nav-header-fg-color);
     position: fixed;
     height: 60px;
     width: 100%;
@@ -114,11 +111,13 @@ main {
 }
 
 
-footer{
+footer {
     background-color: var(--nav-footer-bg-color);
-    color: white;
+    color: var(--nav-footer-fg-color);
     padding: 30px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    text-align: center;
+}
+
+footer a {
+    color: var(--nav-footer-fg-color);
 }
