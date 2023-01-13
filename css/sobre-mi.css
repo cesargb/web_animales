@@ -1,8 +1,7 @@
-.todas-las-tarjetas{
+.todas-las-tarjetas {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-
 }
 
 section{
